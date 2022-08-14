@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>TD64</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">TD64</a>
+        <ul>
+            <li><a href="https://soundcloud.com/t1nkydev" target="_blank">SOUNDCLOUD</a></li>
+            <li><a href="#sec">ABOUT ME</a></li>
+            <li><a href="#thr">LATEST RELEASES</a></li>
+        </ul>
+    </header> 
+    <section>
+        <h1 id="text">hello!</h1>
+        <img src="mountain.png">
+        <img src="mountain1.png">
+        <img src="stars.png" id="stars">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Me:</h2><br/>
+        <p>I like making music for people to enjoy :), <br/><br/>I am also a HTML programmer and im learning C# and JavaScript!<br/><br/>Have a nice day :)</p>
+    </div>
+    <center>
+    <div class="thr" id="thr">
+        <h3>My newest releases:</h3>
+        <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1323635218&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Segoe UI,sans-serif;font-weight: 100;"></div>
+        <p>coming soon...</p>
+    </div>
+    </center>
+    <script>
+        let text = document.getElementById('text');
+        let stars = document.getElementById('stars');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            text.style.marginTop = value + 'px';
+            stars.style.left = value + 'px';
+        })
+    </script>
+</body>
+</html>
