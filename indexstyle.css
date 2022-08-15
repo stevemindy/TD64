@@ -14,7 +14,7 @@ body
 header
 {
     z-index: 99;
-    font-size: 1.20em;
+    font-size: 1vh;
     font-family: 'Segoe UI', sans-serif;
     position: absolute;
     top: 0;
@@ -28,6 +28,7 @@ header
 }
 header .logo
 {
+    font-size: 3vh;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
